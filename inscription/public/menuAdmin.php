@@ -10,6 +10,9 @@
         <a class="nav-link" href="./personel.php">Personel</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="./utilisateurs.php">Utilisateur</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>

@@ -52,7 +52,6 @@
 				</div>
 				<div id="formulaire">
 					<form method="POST" action="target.php" enctype="multipart/form-data">
-						<h2>Votre Contact</h2>
 						<div id="nom_prenom_date">
 							<p> Noms et date de naissance</p>						
 							<div class="form_nom">
@@ -105,6 +104,7 @@
 						</div>
 						<h2>Information Personelle</h2>
 						<div id="information-cocher">
+							<h2>Votre Contact</h2>
 							<p><strong>Etes-vous beneficiare ?</strong></p>
 							<div class="form-3">
 								<input type="checkbox" id="securité_soial" name="securité_soial">
@@ -116,7 +116,7 @@
   								<input type="checkbox" id="oui-non" name="oui-non">
   								<label for="oui-non">Vous savez pas ?</label>
 							</div>
-							<p><strong>Avez vous pour antecedents medicaux ou etes-vous suivie pour uen maladie chronique?</strong></p>
+							<p><strong>Avez vous pour antecedents medicaux ou etes-vous suivie pour une maladie chronique?</strong></p>
 							<div class="form-4">
 								<input type="checkbox" id="diabete" name="diabete">
   								<label for="diabete">Diabète</label><br>

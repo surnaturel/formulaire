@@ -5,28 +5,8 @@ body{
 	color: black;
 	background-color: white;
 }
-#menu{
-	border: 3px solid blue;
-	height: 40px;
-	text-align: center;
-}
-#menu h1{
-	position: relative;
-	bottom: 35px;
-}
-#menu p{
-	position: relative;
-	bottom: 70px;
-}
-#information{
-	border-bottom: 3px solid black;
-	padding-bottom: 50px;
-}
-#en-tete{
-	text-align: center;
-}
 #information_importante{
-	border:3px solid red;
+	border:6px solid blue;
 	width: 70%;
 	justify-content: center;
 	margin-left: auto;
@@ -40,8 +20,13 @@ body{
 .titre-section{
 	text-decoration: underline;
 }
-#nom_prenom_date p{
-	padding-left: 50px;
+
+#formulaire{
+	border-top: 3px solid black;
+	margin-top: 50px;
+}
+.form_nom1{
+	padding-bottom: 80px;
 }
 .form_nom{
 	display: flex;
@@ -63,12 +48,15 @@ h2{
 	display: flex;
 	justify-content: space-around;
 }
+
 #information-cocher{
+	border-top: 3px solid black;
 	border-bottom: 3px solid black;
-	width: 60%;
+	width: 80%;
 	margin-left: auto;
    	margin-right: auto;
    	padding-bottom: 50px;
+   	padding-top: 10px;
 }
 #information-cocher .form-3{
 	padding-left: 20px;
@@ -76,89 +64,35 @@ h2{
 #information-cocher .form-4{
 	padding-left: 20px;
 }
+#information{
+	border-bottom: 3px solid black;
+	padding-bottom: 50px;
+}
+
+
+
 .depression_oui{
 	padding-left: 30px;
 }
 #grosesses_precedente{
 	border-bottom: 3px solid black;
-	width: 60%;
+	width: 80%;
 	margin-left: auto;
-	border-bottom: 3px solid black;
+	margin-right: auto;
 	padding-bottom: 50px;
 }
-#en-tete{
-	text-align: center;
-}
-#information_importante{
-	border:3px solid red;
-	width: 70%;
-	justify-content: center;
-	margin-left: auto;
-   	margin-right: auto;
-}
-#information_importante .titre-section1{
-	text-decoration: underline;
-	text-align: center;
-}
-.titre-section{
-	text-decoration: underline;
-}
-#nom_prenom_date p{
-	padding-left: 50px;
-}
-.form_nom{
-	display: flex;
-	justify-content: space-around;
-}
-#adress{
-	border-bottom: 3px solid black;
-	padding-bottom: 50px;
-}
-#adress p{
-	padding-left: 50px;
-}
-h2{
-	text-align: center;
-	margin-bottom: 40px;
-	margin-top :70px;
-}
-.form_adress{
-	display: flex;
-	justify-content: space-around;
-}
-#information-cocher{
-	border-bottom: 3px solid black;
-	width: 60%;
-	margin-left: auto;
-   	margin-right: auto;
-   	padding-bottom: 50px;
-}
-#information-cocher .form-3{
-	padding-left: 20px;
-}
-#information-cocher .form-4{
-	padding-left: 20px;
-}
-.depression_oui{
-	padding-left: 30px;
-}
-#grosesses_precedente{
-	border-bottom: 3px solid black;
-	width: 60%;
-	margin-left: auto;
-   	margin-right: auto;
-   	padding-bottom: 50px;
-}
+
+
 #grosesses_actuelle{
 	border-bottom: 3px solid black;
-	width: 60%;
+	width: 80%;
 	margin-left: auto;
     margin-right: auto;
    	padding-bottom: 50px;
 }
 #suivi_grossesse{
 	border-bottom: 3px solid black;
-	width: 60%;
+	width: 80%;
 	margin-left: auto;
    	margin-right: auto;
    	padding-bottom: 50px;
@@ -175,32 +109,7 @@ h2{
 #validation_texte .validation{
 	color: green;
 }
-#grosesses_actuelle{
-	border-bottom: 3px solid black;
-	width: 60%;
-	margin-left: auto;
-   	margin-right: auto;
-   	padding-bottom: 50px;
-}
-#suivi_grossesse{
-	border-bottom: 3px solid black;
-	width: 60%;
-	margin-left: auto;
-   	margin-right: auto;
-   	padding-bottom: 50px;
-}
-#validation_texte{
-	width: 70%;
-	margin-left: auto;
-   	margin-right: auto;
-   	text-align: center;
-}
-#validation_texte .texte{
-	font-size: x-small;
-}
-#validation_texte .validation{
-	color: green;
-			}
+
 #footer{
 	background-color: black;
 	color: white;

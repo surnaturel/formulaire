@@ -1,3 +1,20 @@
+
+/* ......      traitement de la depression      ......*/
+
+var drepa = document.getElementById('drepa');
+drepa.addEventListener('click', function(){
+  var hete_homoD = document.getElementById('drepa');
+  var hete_homo =  document.getElementById('hete_homo');
+  console.log('hete_homoD.checked');
+  if(hete_homoD.checked == true){
+    hete_homo.style.display = "block";
+    hete_homo.setAttribute('name', 1);
+  }else{
+    hete_homo.style.display = 'none';
+    hete_homo.setAttribute('name', 0);
+  }
+});
+
 /* ......      Depression      ......*/
 var element = document.getElementById('depression');
 element.addEventListener('click', function() {
@@ -22,7 +39,7 @@ traitemant.addEventListener('click', function(){
   	} else {
     	depression_medicament.style.display = "none";
   	}
-});
+});  
 
 /* ......      Avez vous accoucher a SCHIPHRAT      ......*/
 
@@ -31,7 +48,7 @@ avez_vous_accou.addEventListener('click', function(){
 	var valeur = document.getElementById('avez_vous_accou_oui').value;
 	var date_Accouchement = document.querySelector(".date_Accouchement");
 	console.log(valeur);
-	if (valeur == 'avez_vous_accou_oui'){
+	if (valeur == 'oui'){
 		date_Accouchement.style.display = "block";
 	} else {
     	date_Accouchement.style.display = "none";
@@ -43,7 +60,7 @@ avez_vous_accoun.addEventListener('click', function(){
   var valeur = document.getElementById('avez_vous_accou_non').value;
   var date_Accouchement = document.querySelector(".date_Accouchement");
   console.log(valeur);
-  if (valeur !== 'avez_vous_accou_oui'){
+  if (valeur !== 'oui'){
     date_Accouchement.style.display = "none";
   } else {
       date_Accouchement.style.display = "block";
@@ -84,13 +101,11 @@ personelle_CSHSF_non.addEventListener('click', function(){
 
 var avez_vous_accou_F = document.getElementById('avez_vous_accou_F_oui');
 avez_vous_accou_F.addEventListener('click', function(){
-  var valeur_checkbox = document.getElementById('avez_vous_accou_F_non')
   var valeur = document.getElementById('avez_vous_accou_F_oui').value;
   var nombre_fausse_couche = document.querySelector(".nombre-fausse_couche");
   console.log(valeur);
-  if (valeur == 'avez_vous_accou_F_oui'){
+  if (valeur == 'oui'){
     nombre_fausse_couche.style.display = "block";
-    valeur_checkbox.checked = false;
   } else {
       nombre_fausse_couche.style.display = "none";
     }
@@ -98,13 +113,11 @@ avez_vous_accou_F.addEventListener('click', function(){
 
 var avez_vous_accou_F_non = document.getElementById('avez_vous_accou_F_non');
 avez_vous_accou_F_non.addEventListener('click', function(){
-  var valeur_checkbox = document.getElementById('avez_vous_accou_F_oui')
   var valeur = document.getElementById('avez_vous_accou_F_non').value;
   var nombre_fausse_couche = document.querySelector(".nombre-fausse_couche");
   console.log(valeur);
-  if (valeur !== 'avez_vous_accou_F_oui'){
+  if (valeur !== 'oui'){
     nombre_fausse_couche.style.display = "none";
-    valeur_checkbox.checked = false;
   } else {
       nombre_fausse_couche.style.display = "block";
     }
@@ -130,13 +143,11 @@ ac_avant_8_mois.addEventListener('click', function(){
 
 var cesarienne_oui = document.getElementById('cesarienne_oui');
 cesarienne_oui.addEventListener('click', function(){
-  var valeur_checkbox = document.getElementById('cesarienne_non')
   var valeur = document.getElementById('cesarienne_oui').value;
-  var nombre_cesarienne = document.querySelector(".nombre_cesarienne");
+  var nombre_cesarienne = document.querySelector(".nb_cesarienne");
   console.log(valeur);
-  if (valeur == 'cesarienne_oui'){
+  if (valeur == 'oui'){
     nombre_cesarienne.style.display = "block";
-    valeur_checkbox.checked = false;
   } else {
       nombre_cesarienne.style.display = "none";
     }
@@ -144,13 +155,11 @@ cesarienne_oui.addEventListener('click', function(){
 
 var cesarienne_non = document.getElementById('cesarienne_non');
 cesarienne_non.addEventListener('click', function(){
-  var valeur_checkbox = document.getElementById('cesarienne_oui')
   var valeur = document.getElementById('cesarienne_non').value;
-  var nombre_cesarienne = document.querySelector(".nombre_cesarienne");
+  var nombre_cesarienne = document.querySelector(".nb_cesarienne");
   console.log(valeur);
-  if (valeur !== 'cesarienne_oui'){
+  if (valeur !== 'oui'){
     nombre_cesarienne.style.display = "none";
-    valeur_checkbox.checked = false;
   } else {
       nombre_cesarienne.style.display = "block";
     }
